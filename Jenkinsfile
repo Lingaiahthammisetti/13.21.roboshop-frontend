@@ -10,7 +10,7 @@ pipeline {
     environment {
         appVersion = '' // this will become global, we can use across pipeline
         region = 'us-east-1'
-        account_id = '730335449147'
+        account_id = '484907532817'
         project = 'roboshop'
         environment = 'dev'
         component = 'frontend'
