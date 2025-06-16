@@ -1,13 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dispatch
+  name: frontend
   namespace: roboshop
 spec:
   selector:
-    app: dispatch
+    app: frontend
     project: roboshop
+    tier: web
   ports:
   - protocol: TCP
-    port: 5672 #service-port
-    targetPort: 5672 #container-port
+    port: 80 #service-port
+    targetPort: 8080 #container-port
